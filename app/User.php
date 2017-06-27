@@ -27,3 +27,8 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 }
+/*
+ * SELECT COUNT(  'user_id' ) , created_at, SUM(  `onboarding_perentage` ) 
+FROM  `users` 
+GROUP BY WEEK(  `created_at` ) 
+ */

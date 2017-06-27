@@ -19,3 +19,6 @@ Route::get('/', function () {
 
 
 Route::get('/{vue?}', function () { return view('welcome'); })->where('vue', '[\/\w\.-]*');
+
+Route::get('/rooms', function () { return view('welcome'); })->where('vue', '[\/\w\.-]*');
+

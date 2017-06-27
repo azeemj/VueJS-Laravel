@@ -17,5 +17,9 @@
     "vue-resource": "^1.0.3",
     "vue-router": "^2.0.0",
     "vue-strap": "^1.1.28"
+  },
+  "dependencies": {
+    "v-highcharts": "^1.0.0",
+    "vue2-highcharts": "^1.1.1"
   }
 }

@@ -14,17 +14,13 @@ use Illuminate\Http\Request;
 */
 
 
-// sample API
-Route::get('/rooms',function(){
 
-	return \App\Room::all();
+
+Route::get('/v1/onboarding','APIController@weeklyGraph');
+
+Route::get('/test',function(){
+
+	  return response()->json(['success' => false, 'content' => ['message' => "Invalid token.",
+        'result' => null]]);
 	
 });
-
-
-Route::get('/user', function (Request $request) {
-    return $request->user();
-})->middleware('auth:api');
-
-
-
